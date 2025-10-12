@@ -68,6 +68,11 @@ ETH_STAKING_REDEEM = '/api/v5/finance/staking-defi/eth/redeem'
 ETH_STAKING_BALANCE = '/api/v5/finance/staking-defi/eth/balance'
 ETH_STAKING_HISTORY = '/api/v5/finance/staking-defi/eth/purchase-redeem-history'
 ETH_STAKING_APY_HISTORY = '/api/v5/finance/staking-defi/eth/apy-history'
+SOL_STAKING_PURCHASE = '/api/v5/finance/staking-defi/sol/purchase'
+SOL_STAKING_REDEEM = '/api/v5/finance/staking-defi/sol/redeem'
+SOL_STAKING_BALANCE = '/api/v5/finance/staking-defi/sol/balance'
+SOL_STAKING_HISTORY = '/api/v5/finance/staking-defi/sol/purchase-redeem-history'
+SOL_STAKING_APY_HISTORY = '/api/v5/finance/staking-defi/sol/apy-history'
 ASSET_VALUATION = '/api/v5/asset/asset-valuation'
 
 # Market Data

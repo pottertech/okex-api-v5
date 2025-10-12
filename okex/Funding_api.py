@@ -72,7 +72,26 @@ class FundingAPI(Client):
         params = {'days': days}
         return self._request_with_params(GET, ETH_STAKING_APY_HISTORY, params)
 
-    def get_asset_valuation(self,ccy=None):
+    def sol_staking_purchase(self, amt):
+        params = {'amt': amt}
+        return self._request_with_params(POST, SOL_STAKING_PURCHASE, params)
+
+    def sol_staking_redeem(self, amt):
+        params = {'amt': amt}
+        return self._request_with_params(POST, SOL_STAKING_REDEEM, params)
+
+    def get_sol_staking_balance(self):
+        return self._request_with_params(GET, SOL_STAKING_BALANCE)
+
+    def get_sol_staking_history(self, type=None, status=None, after=None, before=None, limit=None):
+        params = {'type': type, 'status': status, 'after': after, 'before': before, 'limit': limit}
+        return self._request_with_params(GET, SOL_STAKING_HISTORY, params)
+
+    def get_sol_staking_apy_history(self, days=None):
+        params = {'days': days}
+        return self._request_with_params(GET, SOL_STAKING_APY_HISTORY, params)
+
+    def get_asset_valuation(self, ccy=None):
         params = {'ccy': ccy}
         return self._request_with_params(GET, ASSET_VALUATION, params)
 
